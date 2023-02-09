@@ -6,7 +6,7 @@ class Openresty < Formula
   VERSION = "1.21.4.2".freeze
   revision 1
   url "https://github.com/openresty/openresty/archive/refs/heads/bump-1.21.4.2.zip"
-  sha256 ""
+  sha256 "531c85854287463243f9c773bf2c9542e721c35712b6d4a067743252047e5b44"
 
   option "with-postgresql", "Compile with ngx_http_postgres_module"
   option "with-iconv", "Compile with ngx_http_iconv_module"
@@ -63,7 +63,7 @@ class Openresty < Formula
       --with-http_mp4_module
       --with-http_gunzip_module
       --with-threads
-      --with-http_image_filter_module
+      --with-http_image_filter_module=dynamic
       --with-luajit-xcflags=-DLUAJIT_NUMMODE=2\ -DLUAJIT_ENABLE_LUA52COMPAT\ -fno-stack-check
     ]
 
