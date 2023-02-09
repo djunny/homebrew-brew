@@ -3,10 +3,10 @@ require 'etc'
 class Openresty < Formula
   desc "Scalable Web Platform by Extending NGINX with Lua"
   homepage "https://openresty.org"
-  VERSION = "1.21.4.1".freeze
+  VERSION = "1.21.4.2".freeze
   revision 1
-  url "https://openresty.org/download/openresty-#{VERSION}.tar.gz"
-  sha256 "0c5093b64f7821e85065c99e5d4e6cc31820cfd7f37b9a0dec84209d87a2af99"
+  url "https://github.com/openresty/openresty/archive/refs/heads/bump-1.21.4.2.zip"
+  sha256 ""
 
   option "with-postgresql", "Compile with ngx_http_postgres_module"
   option "with-iconv", "Compile with ngx_http_iconv_module"
@@ -63,6 +63,7 @@ class Openresty < Formula
       --with-http_mp4_module
       --with-http_gunzip_module
       --with-threads
+      --with-http_image_filter_module
       --with-luajit-xcflags=-DLUAJIT_NUMMODE=2\ -DLUAJIT_ENABLE_LUA52COMPAT\ -fno-stack-check
     ]
 
