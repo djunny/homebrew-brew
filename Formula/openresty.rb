@@ -4,9 +4,9 @@ class Openresty < Formula
   desc "Scalable Web Platform by Extending NGINX with Lua"
   homepage "https://openresty.org"
   VERSION = "1.21.4.2".freeze
-  revision 1
-  url "https://github.com/openresty/openresty/archive/refs/heads/bump-1.21.4.2.zip"
-  sha256 "531c85854287463243f9c773bf2c9542e721c35712b6d4a067743252047e5b44"
+  revision 2
+  url "https://openresty.org/download/openresty-1.21.4.2rc1.tar.gz"
+  sha256 "ee96bbcf119abe5f1fc90461dd4674bd9397aa3db5544139578d9ace81983fdb"
 
   option "with-postgresql", "Compile with ngx_http_postgres_module"
   option "with-iconv", "Compile with ngx_http_iconv_module"
